@@ -1,0 +1,187 @@
+*{
+    font-family: 'Texturina', serif;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+
+#navbar{
+    background-color: #fff!important;
+    border-bottom: 4px solid wheat;
+}
+#navbar .navbar-brand{
+    font-size: 30px !important;
+    color: tomato;
+}
+#navbar .nav-link{
+    color:#000 ;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s all;
+}
+#navbar .nav-link:hover{
+    color: #000;
+    background-color: cyan;
+}
+#slider{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./image/pexels-andrea-piacquadio-845434.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 300px;
+}
+/*  Slider */
+#title h1{
+    color: #fff;
+    font-weight:600;
+}
+#title h2{
+    color: #fff;
+    font-weight:600 ;
+}
+    
+
+/*  Abput Section  */
+.about-section{
+    background: #f7f9ff;
+}
+.about-section h2{
+    color: tomato;
+}
+.about-text-left{
+    margin-top: 120px;
+}
+.about-text-left .lead {
+    font-size: 25px;
+    line-height: 2.7rem;
+}
+.about-section .image{
+    border: 5px solid red;
+}
+.about-section .image img{
+    position: relative;
+    left: 55px;
+    bottom: 51px;
+}
+
+
+/*   Details  */
+
+.details{
+    padding: 50px;
+    background-color: #ecf0f1;
+}
+.details .d-box{
+    padding: 20px;
+}
+.details .d-box span{
+    width: 10px;
+    height: 10px;
+    color: #000;
+    background-color: tomato;
+    display: inline-block;
+    font-size: 40px !important;
+    border-radius: 50%;
+    transition: 0.4s all;
+}
+.details .d-box p{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.details .d-box:hover{
+    background-color: wheat;
+    color:#fff;
+}
+
+
+
+/*  Portolio Hover Css  */
+.portfolio-item{}
+.portfolio-item a{
+    position: relative;
+    display: block;
+}
+.portfolio-item a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(98, 120, 223,.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.portfolio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+.min-section-bg{
+    background-color: #f7f9ff;
+}
+
+
+/*  contact  */
+
+.contact{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./image//raju.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.contact h2{
+    color: #fff;
+    font-weight: 600;
+}
+
+.contact .box{
+
+    padding: 80px 1px;
+    background-color: silver;
+    transition: .3s all;
+}
+.contact .box i{
+    display: block;
+    font-size: 50px;
+    color: red;
+}
+.contact.box p{
+    font-size: 50px;
+
+}
+.contact .box:hover{
+    background-color: turquoise;
+    color: #000;
+}
+
+
+@media (max-width:780px){
+
+    #title h1{
+        font-size:20px ;
+    }
+    #title h2{
+        font-size: 18px;
+    }
+    
+    
+}
+@media (max-width:615px){
+
+    #title h1{
+        font-size:10px ;
+    }
+    #title h2{
+        font-size: 8px;
+    }
+    
+    
+}
